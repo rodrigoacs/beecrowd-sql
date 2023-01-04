@@ -1,8 +1,11 @@
-SELECT products.name,
+SELECT
+    products.name,
     providers.name,
     products.price
-FROM products
+FROM
+    products
     JOIN categories ON products.id_categories = categories.id
     JOIN providers ON products.id_providers = providers.id
-WHERE categories.name in ('Super Luxury')
+WHERE
+    categories.name IN ('Super Luxury')
     AND products.price > 1000

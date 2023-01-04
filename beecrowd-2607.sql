@@ -1,3 +1,6 @@
-SELECT DISTINCT city
-FROM providers
-ORDER BY city
+SELECT
+    DISTINCT city
+FROM
+    providers
+ORDER BY
+    city

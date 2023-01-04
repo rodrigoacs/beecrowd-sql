@@ -1,5 +1,8 @@
-select customers.name,
+SELECT
+    customers.name,
     orders.id
-from customers
-    join orders on orders.id_customers = customers.id
-where (orders.orders_date < '2016-07-01')
+FROM
+    customers
+    JOIN orders ON orders.id_customers = customers.id
+WHERE
+    (orders.orders_date < '2016-07-01')

@@ -1,5 +1,8 @@
-SELECT movies.id,
+SELECT
+    movies.id,
     movies.name
-FROM movies
+FROM
+    movies
     JOIN genres ON movies.id_genres = genres.id
-WHERE genres.description in ('Action')
+WHERE
+    genres.description IN ('Action')

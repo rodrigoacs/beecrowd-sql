@@ -1,5 +1,8 @@
-SELECT products.id,
+SELECT
+    products.id,
     products.name
-FROM categories
+FROM
+    categories
     JOIN products ON categories.id = products.id_categories
-WHERE categories.name LIKE 'super%'
+WHERE
+    categories.name LIKE 'super%'

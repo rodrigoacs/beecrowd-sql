@@ -1,5 +1,8 @@
-SELECT movies.id,
+SELECT
+    movies.id,
     movies.name
-FROM movies
+FROM
+    movies
     JOIN prices ON movies.id_prices = prices.id
-WHERE prices.value < 2.0
+WHERE
+    prices.value < 2.0

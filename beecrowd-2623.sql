@@ -1,6 +1,9 @@
-select products.name,
+SELECT
+    products.name,
     categories.name
-from categories
-    join products on categories.id = products.id_categories
-where products.amount > 100
-    and (products.id_categories in (1, 2, 3, 6, 9))
+FROM
+    categories
+    JOIN products ON categories.id = products.id_categories
+WHERE
+    products.amount > 100
+    AND (products.id_categories IN (1, 2, 3, 6, 9))

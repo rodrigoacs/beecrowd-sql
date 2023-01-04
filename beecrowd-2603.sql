@@ -1,4 +1,7 @@
-SELECT name,
+SELECT
+    name,
     street
-FROM customers
-WHERE(city = 'Porto Alegre')
+FROM
+    customers
+WHERE
+(city = 'Porto Alegre')

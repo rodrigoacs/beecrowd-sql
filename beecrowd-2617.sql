@@ -1,5 +1,8 @@
-SELECT products.name,
+SELECT
+    products.name,
     providers.name
-FROM products
+FROM
+    products
     JOIN providers ON products.id_providers = providers.id
-WHERE providers.name = ('Ajax SA')
+WHERE
+    providers.name = ('Ajax SA')

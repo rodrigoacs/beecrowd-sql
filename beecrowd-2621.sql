@@ -1,6 +1,9 @@
-select products.name
-from products
-    join providers on products.id_providers = providers.id
-where products.amount < 20
-    and products.amount > 10
-    and providers.name like 'P%'
+SELECT
+    products.name
+FROM
+    products
+    JOIN providers ON products.id_providers = providers.id
+WHERE
+    products.amount < 20
+    AND products.amount > 10
+    AND providers.name LIKE 'P%'

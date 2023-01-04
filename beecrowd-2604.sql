@@ -1,5 +1,8 @@
-SELECT id,
+SELECT
+    id,
     name
-FROM products
-WHERE price > 100
+FROM
+    products
+WHERE
+    price > 100
     OR price < 10
